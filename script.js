@@ -11,13 +11,23 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 var ROLES = {
-  "PO": "#247BA0",
-  "CJE": "#70C1B3",
-  "Designer": "#B2DBBF",
-  "Tester": "#F3FFBD",
-  "Team Member": "#D86C89",
+  "PO": "#67B7DC",
+  "CJE": "#6771DC",
+  "Designer": "#A367DC",
+  "Tester": "#DC66CE",
+  "Team Member": "#6793DC",
   "Данных нет": "black"
 };
+
+
+// var ROLES = {
+//   "PO": "#003f5c",
+//   "CJE": "#58508d",
+//   "Designer": "#bc5090",
+//   "Tester": "#ff6361",
+//   "Team Member": "#ffa600",
+//   "Данных нет": "black"
+// };
 var data = {
   category: "ДомКлик РБ.",
   value: 541,
@@ -2382,15 +2392,15 @@ function update() {
     }(); // Add one dot in the legend for each name.
 
 
-  svg.selectAll("mydots").data(Object.values(ROLES)).enter().append("circle").attr("cx", 100).attr("cy", function (d, i) {
-    return 100 + i * 40;
+  svg.selectAll("mydots").data(Object.values(ROLES)).enter().append("circle").attr("cx", 50).attr("cy", function (d, i) {
+    return 50 + i * 40;
   }) // 100 is where the first dot appears. 25 is the distance between dots
     .attr("r", 7).style("fill", function (d) {
     return d;
   }); // Add one dot in the legend for each name.
 
-  svg.selectAll("mylabels").data(Object.keys(ROLES)).enter().append("text").attr("x", 120).attr("y", function (d, i) {
-    return 100 + i * 40;
+  svg.selectAll("mylabels").data(Object.keys(ROLES)).enter().append("text").attr("x", 70).attr("y", function (d, i) {
+    return 50 + i * 40;
   }) // 100 is where the first dot appears. 25 is the distance between dots
     .style("fill", function (d) {
       return ROLES[d];
