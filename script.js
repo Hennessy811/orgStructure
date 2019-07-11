@@ -1,14 +1,43 @@
 "use strict";
 
-function _instanceof(left, right) { if (right != null && typeof Symbol !== "undefined" && right[Symbol.hasInstance]) { return right[Symbol.hasInstance](left); } else { return left instanceof right; } }
+function _instanceof(left, right) {
+  if (right != null && typeof Symbol !== "undefined" && right[Symbol.hasInstance]) {
+    return right[Symbol.hasInstance](left);
+  } else {
+    return left instanceof right;
+  }
+}
 
-function _classCallCheck(instance, Constructor) { if (!_instanceof(instance, Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _classCallCheck(instance, Constructor) {
+  if (!_instanceof(instance, Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
 
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {value: value, enumerable: true, configurable: true, writable: true});
+  } else {
+    obj[key] = value;
+  }
+  return obj;
+}
 
 var ROLES = {
   "PO": "#67B7DC",
@@ -38,21 +67,6 @@ var data = {
       category: "Domclick mortgage",
       value: 11,
       children: [{
-        "category": "Warren Cabrera",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Conner Haney",
-        "value": 1,
-        "children": [],
-        "role": "CJE"
-      }, {
-        "category": "Abbott Sharpe",
-        "value": 1,
-        "children": [],
-        "role": "CJE"
-      }, {
         "category": "Floyd Marsh",
         "value": 1,
         "children": [],
@@ -313,21 +327,6 @@ var data = {
         "value": 1,
         "children": [],
         "role": "CJE"
-      }, {
-        "category": "Frost Lloyd",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Sweeney Mays",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
-      }, {
-        "category": "Fowler Turner",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
       }]
     }, {
       category: "Не присвоено",
@@ -342,141 +341,6 @@ var data = {
         "value": 1,
         "children": [],
         "role": "Team Member"
-      }, {
-        "category": "Waller Bradshaw",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
-      }, {
-        "category": "Pennington Jensen",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Mcclain Ward",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Gates Pugh",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Opal Gould",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Megan Bean",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Mabel Myers",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Richardson Clements",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
-      }, {
-        "category": "Aurora Cote",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
-      }, {
-        "category": "Whitney Brock",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Roberta Daniels",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Sonya Stephens",
-        "value": 1,
-        "children": [],
-        "role": "CJE"
-      }, {
-        "category": "Alisa Lawson",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Pauline Wall",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Mills Hampton",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
-      }, {
-        "category": "Dixon Garrison",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Buckner Reed",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
-      }, {
-        "category": "Holt Reese",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
-      }, {
-        "category": "Noel Barron",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Sawyer Bowman",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Ortiz Stanton",
-        "value": 1,
-        "children": [],
-        "role": "CJE"
-      }, {
-        "category": "Mercer Stone",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Molly Mejia",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
-      }, {
-        "category": "Tasha Briggs",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Carolina Chambers",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
-      }, {
-        "category": "Goodman Garner",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
-      }, {
-        "category": "Howard Albert",
-        "value": 1,
-        "children": [],
-        "role": "CJE"
       }]
     }]
   }, {
@@ -750,101 +614,6 @@ var data = {
         "value": 1,
         "children": [],
         "role": "CJE"
-      }, {
-        "category": "Mcdaniel Ruiz",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
-      }, {
-        "category": "Bettie Bass",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Maynard Daniels",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Small Robbins",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Marshall Huffman",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Steele Duffy",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Malinda Mays",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Harper Morrow",
-        "value": 1,
-        "children": [],
-        "role": "CJE"
-      }, {
-        "category": "Richardson Harmon",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Freeman Justice",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Belinda Bauer",
-        "value": 1,
-        "children": [],
-        "role": "CJE"
-      }, {
-        "category": "Dorothea Howe",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
-      }, {
-        "category": "Moon Brock",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Cherie Snyder",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
-      }, {
-        "category": "Holden Hardy",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Jannie Hall",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
-      }, {
-        "category": "Campos Graham",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Hubbard Howard",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Autumn Garrison",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
       }]
     }]
   }, {
@@ -995,91 +764,6 @@ var data = {
         "value": 1,
         "children": [],
         "role": "Tester"
-      }, {
-        "category": "Colette Black",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Gregory Anderson",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Sharron Graham",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Joseph Justice",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
-      }, {
-        "category": "Weaver Cantu",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Sharpe Cruz",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Carson Rhodes",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Church Mcdonald",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
-      }, {
-        "category": "Courtney Snow",
-        "value": 1,
-        "children": [],
-        "role": "CJE"
-      }, {
-        "category": "Perkins Gardner",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Amparo Massey",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Charity Klein",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Tran Hensley",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
-      }, {
-        "category": "Alberta Meyers",
-        "value": 1,
-        "children": [],
-        "role": "CJE"
-      }, {
-        "category": "Velazquez Welch",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Cervantes Buckner",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Hutchinson Hoffman",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
       }]
     }, {
       category: "PHP/Python developers",
@@ -1141,151 +825,6 @@ var data = {
         "value": 1,
         "children": [],
         "role": "Team Member"
-      }, {
-        "category": "Waters Hubbard",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Garza York",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Moses Tillman",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Kane Fitzgerald",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Gibson Sanders",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Landry Mclean",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
-      }, {
-        "category": "Harris Gray",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Hurley David",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
-      }, {
-        "category": "Juanita Cote",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Hays Leonard",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Amelia Gibbs",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Jimmie Prince",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Socorro Orr",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Billie Gonzales",
-        "value": 1,
-        "children": [],
-        "role": "CJE"
-      }, {
-        "category": "Barber Swanson",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Hilda Velez",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
-      }, {
-        "category": "Calderon Brennan",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Hayes Landry",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Loraine Walsh",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Morton Mckee",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Summer Knapp",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Owen Adams",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Hammond Forbes",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
-      }, {
-        "category": "Talley Berg",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Pansy Cooper",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
-      }, {
-        "category": "Berta Cole",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Carol Hooper",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Walter Allison",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Alyce Parsons",
-        "value": 1,
-        "children": [],
-        "role": "CJE"
       }]
     }, {
       category: "ЕКП.Новосибирск",
@@ -1319,157 +858,13 @@ var data = {
         "value": 1,
         "children": [],
         "role": "Team Member"
-      }, {
-        "category": "Waters Hubbard",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Garza York",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Moses Tillman",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Kane Fitzgerald",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Gibson Sanders",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Landry Mclean",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
-      }, {
-        "category": "Harris Gray",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Hurley David",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
-      }, {
-        "category": "Juanita Cote",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Hays Leonard",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Amelia Gibbs",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Jimmie Prince",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Socorro Orr",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Billie Gonzales",
-        "value": 1,
-        "children": [],
-        "role": "CJE"
-      }, {
-        "category": "Barber Swanson",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Hilda Velez",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
-      }, {
-        "category": "Calderon Brennan",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Hayes Landry",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Loraine Walsh",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Morton Mckee",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Summer Knapp",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Owen Adams",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Hammond Forbes",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
-      }, {
-        "category": "Talley Berg",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Pansy Cooper",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
-      }, {
-        "category": "Berta Cole",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Carol Hooper",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Walter Allison",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Alyce Parsons",
-        "value": 1,
-        "children": [],
-        "role": "CJE"
       }]
     }]
   }, {
     category: "Технологические сервисы и работа с данными",
     value: 43,
-    children: [{
+    children: [
+      {
       "category": "Data analysts",
       "value": 13,
       children: [{
@@ -1507,36 +902,6 @@ var data = {
         "value": 1,
         "children": [],
         "role": "PO"
-      }, {
-        "category": "Santiago Grant",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
-      }, {
-        "category": "Perry Marks",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Watts Browning",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Earnestine Morrow",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Bridgette Kemp",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
-      }, {
-        "category": "Duke Fitzgerald",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
       }]
     }, {
       "category": "Helpdesk & Telephony",
@@ -1601,66 +966,6 @@ var data = {
         "value": 1,
         "children": [],
         "role": "CJE"
-      }, {
-        "category": "Antoinette Maxwell",
-        "value": 1,
-        "children": [],
-        "role": "CJE"
-      }, {
-        "category": "Leta Charles",
-        "value": 1,
-        "children": [],
-        "role": "CJE"
-      }, {
-        "category": "Jordan Reilly",
-        "value": 1,
-        "children": [],
-        "role": "CJE"
-      }, {
-        "category": "Blanchard Burgess",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Elnora Oneil",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Shelley Zimmerman",
-        "value": 1,
-        "children": [],
-        "role": "CJE"
-      }, {
-        "category": "Knowles Butler",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
-      }, {
-        "category": "Randolph Calderon",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Vincent Haney",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Alejandra Cantrell",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Angelia Quinn",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Janet Barnes",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
       }]
     }, {
       category: "PHP/Python developers",
@@ -1700,21 +1005,6 @@ var data = {
         "value": 1,
         "children": [],
         "role": "PO"
-      }, {
-        "category": "Yesenia Guthrie",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Griffith Sanchez",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Daugherty House",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
       }]
     }, {
       category: "Python developers Web",
@@ -1800,66 +1090,6 @@ var data = {
         "value": 1,
         "children": [],
         "role": "Designer"
-      }, {
-        "category": "Corina Delacruz",
-        "value": 1,
-        "children": [],
-        "role": "CJE"
-      }, {
-        "category": "Baird Gardner",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Greta Burton",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Deborah Suarez",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Ayala Lambert",
-        "value": 1,
-        "children": [],
-        "role": "CJE"
-      }, {
-        "category": "Jeanie Savage",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Robinson Butler",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Becky Meadows",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
-      }, {
-        "category": "Felecia Schneider",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
-      }, {
-        "category": "Tillman Hernandez",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Dominique Kaufman",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
-      }, {
-        "category": "Foreman Bradley",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
       }]
     }, {
       category: "Partners workflow",
@@ -1879,66 +1109,6 @@ var data = {
         "value": 1,
         "children": [],
         "role": "Team Member"
-      }, {
-        "category": "Trudy Campbell",
-        "value": 1,
-        "children": [],
-        "role": "CJE"
-      }, {
-        "category": "Wagner Bradley",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Patel Baldwin",
-        "value": 1,
-        "children": [],
-        "role": "CJE"
-      }, {
-        "category": "Parrish Dean",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Lynda Ratliff",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Reeves Goff",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Dina Mills",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
-      }, {
-        "category": "Letitia Vincent",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Heath Miranda",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Goodwin Kirk",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Claudia Woodward",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Tanner Tate",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
       }]
     }, {
       category: "Support",
@@ -1955,307 +1125,32 @@ var data = {
     }, {
       category: "Не присвоено",
       value: 66,
-      children: [{
-        "category": "Hansen Mayo",
-        "value": 1,
-        "children": [],
-        "role": "PO"
-      }, {
-        "category": "Cohen Rice",
-        "value": 1,
-        "children": [],
-        "role": "CJE"
-      }, {
-        "category": "Tricia Wade",
-        "value": 1,
-        "children": [],
-        "role": "CJE"
-      }, {
-        "category": "Mccall Carlson",
-        "value": 1,
-        "children": [],
-        "role": "Tester"
-      }, {
-        "category": "Mcintosh Alvarado",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Martina Dixon",
-        "value": 1,
-        "children": [],
-        "role": "Designer"
-      }, {
-        "category": "Bianca Sparks",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Solis Macias",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Lewis Moore",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Parks Hensley",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Little Cherry",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Mccray Ryan",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Ferguson Ingram",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Eloise Gallagher",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Maria Mann",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Gates Haynes",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Marcy Mcknight",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Evangelina Ford",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Glover Best",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Gonzalez Carver",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Suarez Head",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Ruiz Dorsey",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Mcconnell Sims",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Forbes Clark",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Pearson Weber",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Becky Allen",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Browning Barnett",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Byers Cooper",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Chang Bowen",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Evans Kerr",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Bernard Hubbard",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Kenya Brock",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Vance Sheppard",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Edwina Vargas",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Wolfe Sullivan",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Jenkins Wallace",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Lynch Tyler",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Fannie Johnston",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Rosetta Faulkner",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Burt Lynch",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Millicent Copeland",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Russo Whitney",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Garrett Wolfe",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Bridget Rollins",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Angelique Harrington",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Huff Tran",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Keri Davidson",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Rachelle Bray",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Quinn Chase",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Kramer Hobbs",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Jimmie Pena",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Hebert Le",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Douglas Sanders",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Carr Lopez",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "April Byrd",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Young Keith",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Patsy Hanson",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Tyson Huffman",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Gillespie Fisher",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }, {
-        "category": "Downs Cole",
-        "value": 1,
-        "children": [],
-        "role": "Team Member"
-      }]
+      children: [
+        {
+          "category": "Hansen Mayo",
+          "value": 1,
+          "children": [],
+          "role": "PO"
+        },
+        {
+          "category": "Cohen Rice",
+          "value": 1,
+          "children": [],
+          "role": "CJE"
+        },
+        {
+          "category": "Tricia Wade",
+          "value": 1,
+          "children": [],
+          "role": "CJE"
+        },
+        {
+          "category": "Mccall Carlson",
+          "value": 1,
+          "children": [],
+          "role": "Tester"
+        }
+      ]
     }]
   }]
 };
@@ -2373,7 +1268,8 @@ function update() {
               if (value.c && !arr.filter(function (value1) {
                 return value1.c === value.c;
               }).length) {
-                arr.push({ ...value,
+                arr.push({
+                  ...value,
                   r: node.value
                 });
               }
